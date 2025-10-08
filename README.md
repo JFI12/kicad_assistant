@@ -1,3 +1,5 @@
+Currently this doesnt work, but if anyone is interested in developing a Kicad MCP you can use this as a basis. The auto-placer and auto-schematic doesnt work yet.
+
 This project uses ai_companion.py as kicad plugin with a FastAPI backend script.
 
 There are several different ai_companion.py you can choose and app2 or app as backend.
