@@ -1,0 +1,47 @@
+(kicad_sch (version 20231120) (generator "eeschema") (generator_version "8.0") (uuid "954f1735-07f1-4ffe-9dfd-9c2f2e400c73") (paper "A4") (lib_symbols 
+
+(symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) 
+
+(property "Reference" "R" (at 2.032 0.0 90.0) (effects (font (size 1.27 1.27)))) 
+
+(property "Value" "R" (at 0.0 0.0 90.0) (effects (font (size 1.27 1.27)))) 
+
+(property "Footprint" "" (at -1.778 0.0 90.0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Datasheet" "~" (at 0.0 0.0 0.0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Description" "Resistor" (at 0.0 0.0 0.0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "ki_keywords" "R res resistor" (at 0.0 0.0 0.0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "ki_fp_filters" "R_*" (at 0.0 0.0 0.0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(symbol "R_0_1" 
+
+(rectangle (start -1.016 -2.54) (end 1.016 2.54) (stroke (width 0.254) (type default)) (fill (type none)))) 
+
+(symbol "R_1_1" (pin passive line (at 0 3.81 270) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -3.81 90) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))))) 
+
+(symbol (lib_id "Device:R") (at 50.0 50.0 0.0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced yes) (uuid "fa1ae62b-f28e-4686-9258-7be15fbb5c8a") 
+
+(property "Reference" "R1" (at 52.54 48.73 0.0) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Value" "R" (at 52.54 51.27 0.0) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Footprint" "" (at 48.222 50.0 90.0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Datasheet" "~" (at 50.0 50.0 0.0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Description" "Resistor" (at 50.0 50.0 0.0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "a8060e47-5359-4090-8c7a-65b78ffe9730")) (pin "2" (uuid "75964713-313d-4a84-87dd-6f56a9cdc051")) (instances (project "" (path "/954f1735-07f1-4ffe-9dfd-9c2f2e400c73" (reference "R1") (unit 1))))) 
+
+(symbol (lib_id "Device:R") (at 50.0 50.0 0.0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced yes) (uuid "e24b3056-fb84-4521-bb29-0aaca41f3a30") 
+
+(property "Reference" "R2" (at 52.54 48.73 0.0) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Value" "R" (at 52.54 51.27 0.0) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Footprint" "" (at 48.222 50.0 90.0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Datasheet" "~" (at 50.0 50.0 0.0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Description" "Resistor" (at 50.0 50.0 0.0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "5a4e77f2-bffb-45c8-a302-7cd6dabc77f3")) (pin "2" (uuid "825e05e0-4cd5-4df6-9de6-7fc4127e16ad")) (instances (project "" (path "/954f1735-07f1-4ffe-9dfd-9c2f2e400c73" (reference "R2") (unit 1))))) (sheet_instances (path "/" (page "1"))))

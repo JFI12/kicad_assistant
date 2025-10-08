@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name ProjectFootprints)(type KiCad)
+  (uri /home/melke/projects/Kicad_WEB/companion/workspace/footprints.pretty)(options "")(descr ""))
+)

@@ -1,0 +1,35 @@
+source .venv/bin/activate
+uvicorn companion.app:APP --reload --port 5174 VITE
+
+uvicorn companion.app:APP --reload --port 8000
+
+npm run dev
+
+curl -X POST "http://127.0.0.1:5174/project/open?path=/mnt/c/Users/melke/OneDrive/Desktop/ki-lime-pi-to-go-main/Module_RaspberryPi_Pico.pretty/test/door_lock_sensor/door_lock_sensor.kicad_sch"
+
+# via Vite-proxy (port 5174)
+curl -X POST http://127.0.0.1:5174/project/open \
+  -H "Content-Type: application/json" \
+  -d '{"path":"/mnt/c/Users/melke/OneDrive/Desktop/ki-lime-pi-to-go-main/Module_RaspberryPi_Pico.pretty/test/door_lock_sensor/door_lock_sensor.kicad_sch"}'
+
+packages:
+pip install fastapi uvicorn pydantic sexpdata httpx pandas openpyxl
+
+----------
+# From repo root
+py -m venv .venv
+. .\.venv\Scripts\Activate.ps1
+
+# deps
+pip install fastapi "uvicorn[standard]" sexpdata python-multipart
+
+# optional: if your GUI runs on Vite at a different origin
+$env:VITE_ORIGIN = "http://localhost:5174"
+
+# run API
+python -m companion.app
+# or:
+# uvicorn companion.app:APP --host 0.0.0.0 --port 8000 --reload
+
+start windows all packages local:
+run_server.bat

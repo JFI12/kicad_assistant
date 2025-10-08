@@ -1,0 +1,59 @@
+[
+  {
+    "name": "search_parts",
+    "description": "Search for parts by text query. Returns candidate MPNs with vendor links.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "query": { "type": "string" },
+        "filters": { "type": "object" }
+      },
+      "required": ["query"]
+    }
+  },
+  {
+    "name": "get_kicad_assets",
+    "description": "Get KiCad symbol & footprint for a manufacturer part number (MPN). Uses Digi-Key if logged in; else returns login_required.",
+    "input_schema": {
+      "type": "object",
+      "properties": { "mpn": { "type": "string" } },
+      "required": ["mpn"]
+    }
+  },
+  {
+    "name": "add_symbol_to_project",
+    "description": "Add/merge a KiCad symbol into the project library and return the lib ref.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "symbol_kicad_sym": { "type": "string", "description": "Full text content of .kicad_sym entry or file" },
+        "library_name": { "type": "string" }
+      },
+      "required": ["symbol_kicad_sym", "library_name"]
+    }
+  },
+  {
+    "name": "add_footprint_to_project",
+    "description": "Write a .kicad_mod to <project>/footprints.pretty and add to fp-lib-table.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "footprint_kicad_mod": { "type": "string" },
+        "footprint_name": { "type": "string" }
+      },
+      "required": ["footprint_kicad_mod", "footprint_name"]
+    }
+  },
+  {
+    "name": "generate_pinout_excel",
+    "description": "Create an Excel with pin mapping (pin name, number, type, net suggestions) for the given MPN.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "mpn": { "type": "string" },
+        "datasheet_url": { "type": "string" }
+      },
+      "required": ["mpn"]
+    }
+  }
+]

@@ -1,0 +1,6 @@
+(module STM32C011F4_LQFP (layer F.Cu) (tedit 5B3079AF)
+  (fp_text reference U** (at 0 0) (layer F.SilkS))
+  (fp_text value STM32C011F4 (at 0 -2) (layer F.Fab))
+  (pad 1 smd rect (at -4 4) (size 0.6 0.3) (layers F.Cu F.Paste F.Mask))
+  (pad 2 smd rect (at -3 4) (size 0.6 0.3) (layers F.Cu F.Paste F.Mask))
+)

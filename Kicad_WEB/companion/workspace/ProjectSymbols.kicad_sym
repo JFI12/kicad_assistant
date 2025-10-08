@@ -1,0 +1,33 @@
+(kicad_symbol_lib (version 20211014) (generator "companion"))
+
+(kicad_symbol_lib (version 20211014) (generator x)(symbol "DemoPart" (property "Reference" "U" (at 0 0 0)) (property "Value" "DemoPart" (at 0 -2 0))))
+
+(kicad_symbol_lib (version 20211014) (generator "companion.tools.parts")
+  (symbol "STM32F407"
+    (property "Reference" "U" (at 0 0 0))
+    (property "Value" "STM32F407" (at 0 -2 0))
+    (symbol "STM32F407_1_1"
+      (rectangle (start -5 5) (end 5 -5) (stroke (width 0.15) (type default)) (fill (type background)))
+    )
+  )
+)
+
+(kicad_symbol_lib (version 20211014) (generator "companion.tools.parts")
+  (symbol "STM32C011F4"
+    (property "Reference" "U" (at 0 0 0))
+    (property "Value" "STM32C011F4" (at 0 -2 0))
+    (symbol "STM32C011F4_1_1"
+      (rectangle (start -5 5) (end 5 -5) (stroke (width 0.15) (type default)) (fill (type background)))
+    )
+  )
+)
+
+(kicad_symbol_lib (version 20211014) (generator "companion.tools.parts")
+  (symbol "STM32C011F4"
+    (property "Reference" "U" (at 0 0 0))
+    (property "Value" "STM32C011F4" (at 0 -2 0))
+    (symbol "STM32C011F4_1_1"
+      (rectangle (start -5 5) (end 5 -5) (stroke (width 0.15) (type default)) (fill (type background)))
+    )
+  )
+)
